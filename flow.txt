@@ -1,0 +1,15 @@
+Outline of Flow
+
+Yo App Client
+--send-yo-to-our-username-->
+  Yo App Server
+  --get-request-to-our-yo-api-callback-url-->
+    Our Server
+
+On event trigger (eg goal scored)
+--get-or-post-request-to-another-callback-url-we-created-->
+  Our Server
+  --post-request-with-yo-api-secretkey-->
+    Yo App Server (has a database containing the list of all subscribers who sent a Yo to our username)
+    --send-yo-to-all-subscribers-->
+      Yo App Client (of all subscribers)
