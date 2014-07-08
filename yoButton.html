@@ -1,0 +1,17 @@
+<!--
+This is your Yo button! (Yo TEST to get Yo's when AN EVENT IS TRIGGERED!)
+Follow these steps to get the button on your page:
+-->
+
+<div id="yo-button"></div>
+<script type="text/javascript">
+  var _yoData = {
+    "username": "TEST",
+    "trigger": "AN EVENT IS TRIGGERED"
+  };
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  //s.src = "http://yoapp.s3.amazonaws.com/js/yo-button.js";
+  s.src = "yo-button_corrected.js";
+  (document.head || document.getElementsByTagName("head")[0]).appendChild(s);
+</script>
